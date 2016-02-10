@@ -63,12 +63,11 @@ class Logger {
 /**
  * Create a new logger.
  *
- * @param  {Stream} stream
- * @param  {Number} level
+ * @param  {object} options
  * @return {Logger}
  */
-module.exports = function logger(stream, level) {
-  return new Logger(stream, level);
+module.exports = function logger(options) {
+  return new Logger(options);
 };
 
 module.exports.DEBUG = DEBUG;
